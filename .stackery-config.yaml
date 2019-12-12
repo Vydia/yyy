@@ -1,0 +1,3 @@
+stack-name: yyy
+template-path: template.yaml
+strategy: local
