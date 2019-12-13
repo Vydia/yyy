@@ -1,0 +1,56 @@
+{
+  "stack": "AWSTemplateFormatVersion: 2010-09-09\nTransform: AWS::Serverless-2016-10-31\nResources:\n  MyApplication:\n    Type: AWS::Serverless::Application\n    Properties:\n      Location: included-template.yaml\nParameters:\n  StackTagName:\n    Type: String\n    Description: Stack Name (injected by Stackery at deployment time)\n    Default: nested\n  EnvironmentTagName:\n    Type: String\n    Description: Environment Name (injected by Stackery at deployment time)\n    Default: development\n",
+  "format": "SAM",
+  "awsAccountId": "189519246275",
+  "region": "us-west-2",
+  "resources": {
+    "DeploymentMarkerTagJWU84H": {
+      "physicalId": "https://cloudformation-waitcondition-us-west-2.s3-us-west-2.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-west-2%3A189519246275%3Astack/yyy-development/574d64f0-1c76-11ea-90ff-02dbab669d48/DeploymentMarkerTagJWU84H?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191213T004734Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAJBJSWSW6NLR67N6A%2F20191213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=b119e1804592b1663d67275e47db58fceb3a528bea5f055b7a05155655ed9d87"
+    },
+    "MyApplication": {
+      "physicalId": {
+        "DeploymentMarkerTagCQ5GRW": "https://cloudformation-waitcondition-us-west-2.s3-us-west-2.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-west-2%3A189519246275%3Astack/yyy-development-MyApplication-13NQ51HXO1IF0/28798100-1d42-11ea-a466-06e35a67ba22/DeploymentMarkerTagCQ5GRW?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191213T004743Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAJBJSWSW6NLR67N6A%2F20191213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=8e9c8951d47959848631a40c692a5f51f5e67a89b5d7aa3edcb6befc72d2b685"
+      }
+    }
+  },
+  "stackData": {
+    "StackId": "arn:aws:cloudformation:us-west-2:189519246275:stack/yyy-development/574d64f0-1c76-11ea-90ff-02dbab669d48",
+    "StackName": "yyy-development",
+    "ChangeSetId": "arn:aws:cloudformation:us-west-2:189519246275:changeSet/yyy-development-JWU84H/a3b0819b-258f-4fd0-a556-11a3bcb128a4",
+    "Parameters": [
+      {
+        "ParameterKey": "StackTagName",
+        "ParameterValue": "yyy"
+      },
+      {
+        "ParameterKey": "EnvironmentTagName",
+        "ParameterValue": "development"
+      }
+    ],
+    "CreationTime": "2019-12-12T00:28:38.540Z",
+    "LastUpdatedTime": "2019-12-13T00:47:30.945Z",
+    "RollbackConfiguration": {},
+    "StackStatus": "UPDATE_COMPLETE",
+    "DisableRollback": false,
+    "NotificationARNs": [
+      "arn:aws:sns:us-west-2:189519246275:StackeryCloudFormationNotifications"
+    ],
+    "Capabilities": [
+      "CAPABILITY_IAM",
+      "CAPABILITY_NAMED_IAM",
+      "CAPABILITY_AUTO_EXPAND"
+    ],
+    "Outputs": [
+      {
+        "OutputKey": "DeploymentHistoryTag",
+        "OutputValue": "JWU84H",
+        "Description": "Stackery Deployment History Tag"
+      }
+    ],
+    "Tags": [],
+    "EnableTerminationProtection": false,
+    "DriftInformation": {
+      "StackDriftStatus": "NOT_CHECKED"
+    }
+  }
+}
