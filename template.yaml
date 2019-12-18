@@ -16,6 +16,11 @@ Resources:
       Tracing: Active
       Policies:
         - AWSXrayWriteOnlyAccess
+      ProvisionedConcurrencyConfig:
+        ProvisionedConcurrentExecutions: 3
+      AutoPublishAlias: live
+      DeploymentPreference:
+        Type: AllAtOnce
   Websocket:
     Type: AWS::ApiGatewayV2::Api
     Properties:
