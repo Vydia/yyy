@@ -16,6 +16,11 @@ Resources:
       Tracing: Active
       Policies:
         - AWSXrayWriteOnlyAccess
+      ProvisionedConcurrencyConfig:
+        ProvisionedConcurrentExecutions: 2
+      AutoPublishAlias: live
+      DeploymentPreference:
+        Type: AllAtOnce
 Parameters:
   StackTagName:
     Type: String
