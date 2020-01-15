@@ -12,14 +12,10 @@ Resources:
       Handler: index.handler
       Runtime: nodejs12.x
       MemorySize: 3008
-      Timeout: !Ref EnvConfignumberKeyAsString
+      Timeout: 30
       Tracing: Active
       Policies:
         - AWSXrayWriteOnlyAccess
-      AutoPublishAlias: live
-      DeploymentPreference:
-        Type: AllAtOnce
-      ReservedConcurrentExecutions: !Ref EnvConfignumberKeyAsString
 Parameters:
   StackTagName:
     Type: String
