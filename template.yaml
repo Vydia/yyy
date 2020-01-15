@@ -16,11 +16,10 @@ Resources:
       Tracing: Active
       Policies:
         - AWSXrayWriteOnlyAccess
-      ProvisionedConcurrencyConfig:
-        ProvisionedConcurrentExecutions: !Ref EnvConfignumberKeyAsString
       AutoPublishAlias: live
       DeploymentPreference:
         Type: AllAtOnce
+      ReservedConcurrentExecutions: !Ref EnvConfignumberKeyAsString
 Parameters:
   StackTagName:
     Type: String
