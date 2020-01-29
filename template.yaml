@@ -23,9 +23,3 @@ Parameters:
   EnvironmentTagName:
     Type: String
     Description: Environment Name (injected by Stackery at deployment time)
-  EnvConfignumberKeyAsString:
-    Type: AWS::SSM::Parameter::Value<String>
-    Default: /<EnvironmentName>/numberKey
-Metadata:
-  EnvConfigParameters:
-    EnvConfignumberKeyAsString: numberKey
